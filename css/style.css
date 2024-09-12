@@ -1,5 +1,5 @@
 body {
-    background-image: url(/hackathon2024/images/Manos\ Que\ Hablan.png);
+    background-image: url(/images/ManosQueHablan.png);
     background-repeat: no-repeat;
     margin-top: 20px;
     background-position: 145px;
@@ -29,18 +29,19 @@ h2
 {
     border-radius: 45px;
     color: gold;
-background-color: rgba(137, 43, 226, 0.404);
+background-color: rgba(137, 43, 226, 0.979);
 }
 .text-center
 {
     border-radius: 45px;
     display:flex;
-    background-color: rgba(137, 43, 226, 0.404);
+    background-color: rgba(137, 43, 226, 0.616);
 }
+
 h3
 {
     border-radius:40px ;
-    background-color:rgba(137, 43, 226, 0.404 );
+    background-color:rgba(137, 43, 226, 0.473);
     color:red;
 }
 button
@@ -51,8 +52,9 @@ button
 p
 {
     border-radius: 45px;
-    background-color: rgba(137, 43, 226, 0.404 );
+    background-color: #FFE9B8;
     font-size:30px;
+    padding: 10%;
 }
 h1,
 h1::after {

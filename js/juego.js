@@ -1,6 +1,6 @@
 // juego.js
 
-const palabras = ["casa", "perro", "gato", "juego", "amor", "familia", "amigo", "sol", "luna", "estrella"];
+const palabras = ["casa", "perro", "gato", "juego", "amor", "familia", "amigo", "sol", "luna", "espacio"];
 let nivelActual = 0;
 let puntaje = 0;
 
