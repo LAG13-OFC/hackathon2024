@@ -1,5 +1,5 @@
 body {
-    background-image: url(/images/Manos\ Que\ Hablan.png);
+    background-image: url(/hackathon2024/images/Manos\ Que\ Hablan.png);
     background-repeat: no-repeat;
     margin-top: 20px;
     background-position: 145px;
@@ -54,3 +54,167 @@ p
     background-color: rgba(137, 43, 226, 0.404 );
     font-size:30px;
 }
+h1,
+h1::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+}
+
+h1::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+h1:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+/* Estilos para el contenedor de la tabla de puntuaciones */
+#scoreTable {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* Ocultar el contenedor por defecto */
+.hidden {
+    display: none;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el botón de cerrar */
+#closeScores {
+    margin-top: 10px;
+}
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.input {
+    max-width: 190px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: #222;
+    padding: 15px 5px 10px 20px;
+    box-shadow: inset 4px 4px 4px rgba(15, 15, 15, 0.315),4px 4px 4px rgba(28, 28, 28, 0.13);
+    border-radius: 25px;
+    background-clip: padding-box;
+  }
+  
+  .input:focus {
+    padding-bottom: 10px;
+  }
+  
+  .input::placeholder {
+    color: #222;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: .3px;
+  }
+  
+  .input:focus::placeholder {
+    color: #999;
+  }
+  
+  
+  
