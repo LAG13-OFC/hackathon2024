@@ -11,7 +11,7 @@ function mostrarAbecedario() {
 
     letras.forEach(letra => {
         const img = document.createElement('img');
-        img.src = `images/${letra}.png`; // Asegúrate de tener las imágenes del abecedario
+        img.src = `images/tuto/${letra}.jpg`; // Asegúrate de tener las imágenes del abecedario
         img.alt = letra;
         img.classList.add('seña-img');
         abecedarioDiv.appendChild(img);
